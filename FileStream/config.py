@@ -4,18 +4,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Telegram:
-    API_ID = int(env.get(11472991))
-    API_HASH = str(env.get("c78c50d54baf2173e8b3f75c359c0c72"))
-    BOT_TOKEN = str(env.get("7754306060:AAGBIJsYxqYe9vUPKuCsg5t7i5xS786ufWk"))
-    OWNER_ID = int(env.get('OWNER_ID', '1430742022'))
-    WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str(env.get('mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(env.get('tn_botz', "Telegram"))
-    SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
-    FORCE_SUB_ID = env.get('-1002450932371', None)
-    FORCE_SUB = env.get('tn_botz', False)
+    API_ID = int(11472991)
+    API_HASH = str("c78c50d54baf2173e8b3f75c359c0c72"))
+    BOT_TOKEN = str("7754306060:AAGBIJsYxqYe9vUPKuCsg5t7i5xS786ufWk"))
+    OWNER_ID = int('OWNER_ID', '1430742022'))
+    WORKERS = int("WORKERS", "6"))  # 6 workers = 6 commands at once
+    DATABASE_URL = str('mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority'))
+    UPDATES_CHANNEL = str('tn_botz', "Telegram"))
+    SESSION_NAME = str('SESSION_NAME', 'FileStream'))
+    FORCE_SUB_ID =('-1002450932371')
+    FORCE_SUB = ('tn_botz', False)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
-    SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
+    SLEEP_THRESHOLD = int("SLEEP_THRESHOLD", "60")
     FILE_PIC = env.get('FILE_PIC', "https://envs.sh/EyO.jpg")
     START_PIC = env.get('START_PIC', "https://envs.sh/EyO.jpg")
     VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/EyO.jpg")
