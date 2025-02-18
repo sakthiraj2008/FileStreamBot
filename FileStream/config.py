@@ -7,21 +7,21 @@ class Telegram:
     API_ID = int(11472991)
     API_HASH = str("c78c50d54baf2173e8b3f75c359c0c72")
     BOT_TOKEN = str("7754306060:AAGBIJsYxqYe9vUPKuCsg5t7i5xS786ufWk")
-    OWNER_ID = int('OWNER_ID', '1430742022')
-    WORKERS = int("WORKERS", "6")  # 6 workers = 6 commands at once
+    OWNER_ID = int(''1430742022')
+    WORKERS = int("6")  # 6 workers = 6 commands at once
     DATABASE_URL = str('mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority')
-    UPDATES_CHANNEL = str('tn_botz', "Telegram")
-    SESSION_NAME = str('SESSION_NAME', 'FileStream')
+    UPDATES_CHANNEL = str('tn_botz')
+    SESSION_NAME = str('FileStream')
     FORCE_SUB_ID =('-1002450932371')
-    FORCE_SUB = ('tn_botz', False)
+    FORCE_SUB = ('tn_botz')
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
-    SLEEP_THRESHOLD = int("SLEEP_THRESHOLD", "60")
-    FILE_PIC = env.get('FILE_PIC', "https://envs.sh/EyO.jpg")
-    START_PIC = env.get('START_PIC', "https://envs.sh/EyO.jpg")
-    VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/EyO.jpg")
+    SLEEP_THRESHOLD = int("60")
+    FILE_PIC = ("https://envs.sh/EyO.jpg")
+    START_PIC = ("https://envs.sh/EyO.jpg")
+    VERIFY_PIC = ("https://envs.sh/EyO.jpg")
     MULTI_CLIENT = False
-    FLOG_CHANNEL = int("-1002318167392", None)   # Logs channel for file logs
-    ULOG_CHANNEL = int("-1002318167392", None)   # Logs channel for user logs
+    FLOG_CHANNEL = int("-1002318167392")   # Logs channel for file logs
+    ULOG_CHANNEL = int("-1002318167392")   # Logs channel for user logs
     MODE = env.get("MODE", "primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
