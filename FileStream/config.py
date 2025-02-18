@@ -10,15 +10,15 @@ class Telegram:
     OWNER_ID = int(env.get('OWNER_ID', '1430742022'))
     WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     DATABASE_URL = str(env.get('mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(env.get('https://t.me/tn_botz', "Telegram"))
+    UPDATES_CHANNEL = str(env.get('tn_botz', "Telegram"))
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
     FORCE_SUB_ID = env.get('-1002450932371', None)
     FORCE_SUB = env.get('tn_botz', False)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
-    FILE_PIC = env.get('FILE_PIC', "https://graph.org/file/5bb9935be0229adf98b73.jpg")
+    FILE_PIC = env.get('FILE_PIC', "https://envs.sh/EyO.jpg")
     START_PIC = env.get('START_PIC', "https://envs.sh/EyO.jpg")
-    VERIFY_PIC = env.get('VERIFY_PIC', "https://graph.org/file/736e21cc0efa4d8c2a0e4.jpg")
+    VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/EyO.jpg")
     MULTI_CLIENT = False
     FLOG_CHANNEL = int(env.get("-1002318167392", None))   # Logs channel for file logs
     ULOG_CHANNEL = int(env.get("-1002318167392", None))   # Logs channel for user logs
