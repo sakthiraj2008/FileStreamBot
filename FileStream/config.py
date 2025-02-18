@@ -23,7 +23,7 @@ class Telegram:
     FLOG_CHANNEL = int("-1002318167392")   # Logs channel for file logs
     ULOG_CHANNEL = int("-1002318167392")   # Logs channel for user logs
     MODE = env.get("primary")
-    SECONDARY = True if MODE.lower() == "secondary" else False
+    SECONDARY = True if (MODE) == "secondary" else False
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
 
 class Server:
