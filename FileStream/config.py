@@ -5,13 +5,13 @@ load_dotenv()
 
 class Telegram:
     API_ID = int(11472991)
-    API_HASH = str("c78c50d54baf2173e8b3f75c359c0c72"))
-    BOT_TOKEN = str("7754306060:AAGBIJsYxqYe9vUPKuCsg5t7i5xS786ufWk"))
-    OWNER_ID = int('OWNER_ID', '1430742022'))
-    WORKERS = int("WORKERS", "6"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str('mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str('tn_botz', "Telegram"))
-    SESSION_NAME = str('SESSION_NAME', 'FileStream'))
+    API_HASH = str("c78c50d54baf2173e8b3f75c359c0c72")
+    BOT_TOKEN = str("7754306060:AAGBIJsYxqYe9vUPKuCsg5t7i5xS786ufWk")
+    OWNER_ID = int('OWNER_ID', '1430742022')
+    WORKERS = int("WORKERS", "6")  # 6 workers = 6 commands at once
+    DATABASE_URL = str('mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority')
+    UPDATES_CHANNEL = str('tn_botz', "Telegram")
+    SESSION_NAME = str('SESSION_NAME', 'FileStream')
     FORCE_SUB_ID =('-1002450932371')
     FORCE_SUB = ('tn_botz', False)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
