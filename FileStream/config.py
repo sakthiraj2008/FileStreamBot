@@ -7,7 +7,7 @@ class Telegram:
     API_ID = int(11472991)
     API_HASH = str("c78c50d54baf2173e8b3f75c359c0c72")
     BOT_TOKEN = str("7754306060:AAGBIJsYxqYe9vUPKuCsg5t7i5xS786ufWk")
-    OWNER_ID = int(''1430742022')
+    OWNER_ID = int('1430742022')
     WORKERS = int("6")  # 6 workers = 6 commands at once
     DATABASE_URL = str('mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority')
     UPDATES_CHANNEL = str('tn_botz')
@@ -22,7 +22,7 @@ class Telegram:
     MULTI_CLIENT = False
     FLOG_CHANNEL = int("-1002318167392")   # Logs channel for file logs
     ULOG_CHANNEL = int("-1002318167392")   # Logs channel for user logs
-    MODE = env.get("MODE", "primary")
+    MODE = env.get("primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
 
