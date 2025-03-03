@@ -20,7 +20,7 @@ class Telegram:
     START_PIC = ("https://envs.sh/EyO.jpg")
     VERIFY_PIC = ("https://envs.sh/EyO.jpg")
     MULTI_CLIENT = False
-    FLOG_CHANNEL = int("-1002318167392")   # Logs channel for file logs
+    FLOG_CHANNEL = int("-1002262171720")   # Logs channel for file logs
     ULOG_CHANNEL = int("-1002318167392")   # Logs channel for user logs
     MODE = env.get("primary")
     SECONDARY = True if (MODE) == "secondary" else False
